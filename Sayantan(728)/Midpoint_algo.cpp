@@ -1,90 +1,62 @@
-
-#include <iostream>
-#include <GL/glut.h>
+#include <GL/glut.h> 
+#include<math.h>
+#include<iostream>
 using namespace std;
 
-int pntX1, pntY1, r;
+int  r;
 
-void plot(int x, int y)
-{
+void setcirpot(float x,float y){
+	//The default circle center (0, 0)
 	glBegin(GL_POINTS);
-	glVertex2i(x+pntX1, y+pntY1);
+	glColor3f(1,0,0); 
+	glVertex2f(x/1000,y/1000);
+	glVertex2f(y/1000,x/1000);
+	glVertex2f(x/1000,-y/1000);
+	glVertex2f(y/1000,-x/1000);
+	glVertex2f(-x/1000,-y/1000);
+	glVertex2f(-y/1000,-x/1000);
+	glVertex2f(-y/1000,x/1000);
+	glVertex2f(-x/1000,y/1000);
 	glEnd();
 }
-
-
-void myInit (void)
+int Mid_circle(float r)
 {
-	glClearColor(1.0, 1.0, 1.0, 0.0);
-	glColor3f(0.0f, 0.0f, 0.0f);
-	glPointSize(4.0);
-	glMatrixMode(GL_PROJECTION);
-	glLoadIdentity();
-	//gluOrtho2D(0.0, 640.0, 0.0, 480.0);
-	//gluOrtho2D(0, 500, 0, 500);
-}
-
-
-void midPointCircleAlgo()
-{
-	int x = 0;
-	int y = r;
-	float decision = 5/4 - r;
-	plot(x, y);
-
-	while (y > x)
-	{
-		if (decision < 0)
-		{
-			x++; 
-			decision += 2*x+1;
+	glClear(GL_COLOR_BUFFER_BIT);
+	float x,y,d;
+	x=0;
+	y=r;
+	d=1-r;
+	setcirpot(x,y);
+	while(x<=y){
+		if(d<=0){
+			d=d+2*x+3;
 		}
-		else
-		{
+		else{
+			d=d+2*(x-y)+5;
 			y--;
-			x++;
-			decision += 2*(x-y)+1;
 		}
-		plot(x, y);
-		plot(x, -y);
-		plot(-x, y);
-		plot(-x, -y);
-		plot(y, x);
-		plot(-y, x);
-		plot(y, -x);
-		plot(-y, -x);
+		x++;
+		setcirpot(x,y);
 	}
+	glFlush();  
+}
+  
 
+void display(void){ 
+	 
+	 Mid_circle(r);
 }
 
-void myDisplay(void)
-{
-	glClear (GL_COLOR_BUFFER_BIT);
-	glColor3f (0.0, 0.0, 0.0);
-	glPointSize(1.0);
-
-	midPointCircleAlgo();
-
-	glFlush ();
+int main(int argc, char **argv) { 
+     glutInit(&argc, argv); //Initialize glut
+     glutInitDisplayMode(GLUT_DEPTH | GLUT_SINGLE | GLUT_RGBA); 
+     // give input for radius 
+     cout<<"Please input r"<<endl;
+     cin>>r; 
+	
+     glutInitWindowPosition(200,200); //Set the position of the window
+     glutInitWindowSize(400,400); //Set the size of the window
+     glutCreateWindow("Midpoint algo"); //Create window and assign title
+     glutDisplayFunc(display);//Call display to transfer the drawing to the window. The prototype of this function is glutDisplayFunc(void)
+     glutMainLoop(); //Enter the loop and wait
 }
-
-int  main(int argc, char** argv)
-{	
-	cout << "Enter the coordinates of the center:\n\n" << endl;
-
-	cout << "X-coordinate   : "; cin >> pntX1;
-	cout << "\nY-coordinate : "; cin >> pntY1;
-	cout << "\nEnter radius : "; cin >> r;
-
-
-	glutInit(&argc, argv);
-	glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);
-	glutInitWindowSize (640, 480);
-	glutInitWindowPosition (100, 150);
-	glutCreateWindow ("Line Drawing Alogrithms");
-	glutDisplayFunc(myDisplay);
-	myInit ();
-	glutMainLoop();
-
-}
-
