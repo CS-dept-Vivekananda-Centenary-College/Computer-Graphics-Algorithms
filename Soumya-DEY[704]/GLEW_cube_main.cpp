@@ -1,8 +1,12 @@
+/*
+Name: SOUMYA DEY
+Roll No.: 704
+Subject:- CMSA CC-14, Computer Graphics Lab
+*/
+
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <cstdio>
-
-
 
 void controls(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
@@ -10,7 +14,6 @@ void controls(GLFWwindow* window, int key, int scancode, int action, int mods)
         if(key == GLFW_KEY_ESCAPE)
             glfwSetWindowShouldClose(window, GL_TRUE);
 }
-
 
 GLFWwindow* initWindow(const int resX, const int resY)
 {
@@ -93,7 +96,7 @@ void display( GLFWwindow* window )
 
 int main(int argc, char** argv)
 {
-    GLFWwindow* window = initWindow(1024, 780);
+    GLFWwindow* window = initWindow(640, 480);
     if( NULL != window )
     {
         display( window );

@@ -1,16 +1,16 @@
-
+/*
+Name: SOUMYA DEY
+Roll No.: 704
+Subject:- CMSA CC-14, Computer Graphics Lab
+*/
 
 #include <cstdlib>
 #include <cstdio>
 #include <GL/glut.h>
 #include <GL/freeglut.h>
 
-
-
 void init (void){
     glClearColor (0.0, 0.0, 0.0, 0.0);
-
-
 }
 
 void reshape(int x, int w){
@@ -18,7 +18,6 @@ void reshape(int x, int w){
     glLoadIdentity();
     glOrtho(0.0, 30.0, 0.0, 35.0, -1.0, 1.0);
     //gluOrtho2D(500,500,0,0);
-
 }
 
 
@@ -45,8 +44,6 @@ void mydisplay(void){
 
 }
 
-
-
 void mouse(int button, int state, int x, int y){
     x=0; y=0;
     state =0;
@@ -57,14 +54,13 @@ void mouse(int button, int state, int x, int y){
     }
 }
 
-
 int main(int argc, char **argv)
 {
     glutInit(&argc, argv);
     glutInitDisplayMode ( GLUT_DOUBLE|GLUT_DEPTH | GLUT_RGBA);
-    glutInitWindowSize (800, 700);
+    glutInitWindowSize (640, 480);
     glutInitWindowPosition (100, 100);
-    glutCreateWindow ("TRIANGLE");
+    glutCreateWindow ("Triangle");
     init();
     glutDisplayFunc(mydisplay);
     glutReshapeFunc(reshape);

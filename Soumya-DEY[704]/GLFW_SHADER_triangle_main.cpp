@@ -1,3 +1,9 @@
+/*
+Name: SOUMYA DEY
+Roll No.: 704
+Subject:- CMSA CC-14, Computer Graphics Lab
+*/
+
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
@@ -48,7 +54,7 @@ int main(void) {
         return -1;
 
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
+    window = glfwCreateWindow(640, 480, "Triangle with shaders", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
