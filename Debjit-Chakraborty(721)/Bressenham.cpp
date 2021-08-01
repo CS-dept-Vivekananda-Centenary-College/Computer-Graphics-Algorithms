@@ -1,3 +1,6 @@
+/*Name:Debjit Chakraborty
+Roll:721*/
+
 #include <gl/glut.h>
 #include <iostream>
 using namespace std;
