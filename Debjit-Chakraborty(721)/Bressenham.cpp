@@ -1,3 +1,8 @@
+/*Name:Debjit Chakraborty
+Roll:721
+Subject:- CC-14 Computer Graphics
+Program:Write a program to implement Bressenham algorithm*/
+
 #include <gl/glut.h>
 #include <iostream>
 using namespace std;
