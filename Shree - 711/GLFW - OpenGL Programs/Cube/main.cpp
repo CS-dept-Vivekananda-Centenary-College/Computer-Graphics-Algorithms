@@ -1,12 +1,4 @@
-/*
-Name:- Debjit Chakraborty
-Roll No. 721
-Subject:- CC-14 Computer Graphics
-Program: Write a program to implement CUBE drawing
-*/
-
 #include <GL/glew.h>
-//#include <GL/glu.h>
 #include <GLFW/glfw3.h>
 #include <cstdio>
 
@@ -110,3 +102,7 @@ int main(int argc, char** argv)
     glfwTerminate();
     return 0;
 }
+
+/*
+Compile: g++ main.cpp -o main -lglfw -lglut -lGLU -lGL
+*/

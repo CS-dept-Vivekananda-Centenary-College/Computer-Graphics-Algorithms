@@ -1,12 +1,8 @@
-/*Name:Debjit Chakraborty
-Roll:721
-Subject:- CC-14 Computer Graphics
-Program:Write a program to implement Bressenham algorithm*/
-
 #include <gl/glut.h>
-#include <iostream>
+#include<iostream>
 using namespace std;
-int x_1, y_1, x_2, y_2;
+
+int x1, y1, x2, y2;
 
 void myInit() {
 	glClear(GL_COLOR_BUFFER_BIT);
@@ -71,20 +67,20 @@ void draw_line(int x1, int x2, int y1, int y2) {
 }
 
 void myDisplay() {
-	draw_line(x_1, x_2, y_1, y_2);
+	draw_line(x1, x2, y1, y2);
 	glFlush();
 }
 
 int main(int argc, char **argv) {
 
-	cout<< "Enter x1: ";
-	cin>>x_1;
-    cout<< "Enter y1: ";
-	cin>>y_1;
-    cout<< "Enter x2: ";
-	cin>>x_2;
-    cout<< "Enter y2: ";
-	cin>>y_2;
+	 cout << " give X1:";
+    cin >> x1;
+    cout << " give y1:";
+    cin >> y1;
+    cout << " give X2:";
+    cin >> x2;
+    cout << " give y2:";
+    cin >> y2;
 
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);
@@ -94,5 +90,4 @@ int main(int argc, char **argv) {
 	myInit();
 	glutDisplayFunc(myDisplay);
 	glutMainLoop();
-    return 0;
 }
