@@ -1,3 +1,10 @@
+/*
+Name:-Debjit Chakraborty
+Roll No. 721
+Subject:- CC-14 Computer Graphics
+Program: Write a program to implement line Drawing Algorithm
+*/
+
 #include <GL/glut.h>
 #include <GL/freeglut.h> // (or others, depending on the system in use)
 void init (void)
