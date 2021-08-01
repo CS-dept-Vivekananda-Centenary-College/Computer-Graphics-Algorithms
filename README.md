@@ -3,7 +3,7 @@ Different implementations of various drawing algorithms using Open-GL, contribut
 
 # Contributors
 |Name|College Roll|Contribution|
-| :---: | :---: | :---: |
+| :--- | :--- | :--- |
 |Soumen Halder|702|[Open folder 📂](https://github.com/CS-dept-Vivekananda-Centenary-College/Computer-Graphics-Algorithms/tree/main/Soumen-Halder%5B702%5D)|
 |Suryabrata Das|703|[Open folder 📂](https://github.com/CS-dept-Vivekananda-Centenary-College/Computer-Graphics-Algorithms/tree/main/Suryabrata_Das-703)|
 |Soumya Dey|704|[Open folder 📂](https://github.com/CS-dept-Vivekananda-Centenary-College/Computer-Graphics-Algorithms/tree/main/Soumya-DEY%5B704%5D)|
