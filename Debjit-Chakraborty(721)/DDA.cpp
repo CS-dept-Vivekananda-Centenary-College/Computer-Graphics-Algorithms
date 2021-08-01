@@ -1,5 +1,6 @@
 /*Name:Debjit Chakraborty
 Roll:721
+Subject:- CC-14 Computer Graphics
 Write a program to implement DDA algorithm*/
 
 #include<GL/glut.h>
