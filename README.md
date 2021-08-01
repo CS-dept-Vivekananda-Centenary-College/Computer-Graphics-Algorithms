@@ -8,3 +8,4 @@ Different implementations of various drawing algorithms using Open-GL, by Arkadi
 |Soumya Dey|704|[Open folder 📂](https://github.com/CS-dept-Vivekananda-Centenary-College/Computer-Graphics-Algorithms/tree/main/Soumya-DEY%5B704%5D)|
 |Arpan Roy|706|[Open folder 📂](https://github.com/CS-dept-Vivekananda-Centenary-College/Computer-Graphics-Algorithms/tree/main/Arpan%20Roy%20(706))|
 |Arkadip Maitra|725|[Open folder 📂](https://github.com/CS-dept-Vivekananda-Centenary-College/Computer-Graphics-Algorithms/tree/main/Arkadip-Maitra%5B725%5D)|
+|Suryabrata Das|703 |[Open folder 📂](https://github.com/CS-dept-Vivekananda-Centenary-College/Computer-Graphics-Algorithms/tree/Suryabrata-Das)
