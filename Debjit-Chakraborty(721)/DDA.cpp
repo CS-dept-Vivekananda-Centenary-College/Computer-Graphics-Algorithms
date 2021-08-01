@@ -1,3 +1,7 @@
+/*Name:Debjit Chakraborty
+Roll:721
+Write a program to implement DDA algorithm*/
+
 #include<GL/glut.h>
 #include<iostream>
 using namespace std;
