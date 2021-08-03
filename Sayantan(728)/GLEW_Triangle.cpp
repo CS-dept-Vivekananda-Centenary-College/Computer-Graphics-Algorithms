@@ -1,8 +1,4 @@
-/*
-Name: Arpan Singha
-Roll No.: 727
-Subject:- CMSA CC-14, Computer Graphics.
-*/
+
 
 #include <cstdlib>
 #include <cstdio>
