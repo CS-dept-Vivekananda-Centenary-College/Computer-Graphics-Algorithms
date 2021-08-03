@@ -15,6 +15,7 @@
 |Anubrata Das|720|[Open folder 📂](https://github.com/CS-dept-Vivekananda-Centenary-College/Computer-Graphics-Algorithms/tree/main/Anubrata-720)|
 |Debjit Chakraborty|721|[Open folder 📂](https://github.com/CS-dept-Vivekananda-Centenary-College/Computer-Graphics-Algorithms/tree/main/Debjit-Chakraborty(721))|
 |Arkadip Maitra|725|[Open folder 📂](https://github.com/CS-dept-Vivekananda-Centenary-College/Computer-Graphics-Algorithms/tree/main/Arkadip-Maitra%5B725%5D)|
+|Purnendu Paul|726|[Open folder 📂](https://github.com/CS-dept-Vivekananda-Centenary-College/Computer-Graphics-Algorithms-in-OpenGL/tree/main/Purnendu-Paul-726)|
 |Arpan Singha|727|[Open folder 📂](https://github.com/CS-dept-Vivekananda-Centenary-College/Computer-Graphics-Algorithms/tree/main/Arpan%20Singha%20727)|
 |Sayantan Chakraborty|728|[Open folder 📂](https://github.com/CS-dept-Vivekananda-Centenary-College/Computer-Graphics-Algorithms/tree/main/Sayantan(728))|
 |Supravat Das|729|[Open folder 📂](https://github.com/CS-dept-Vivekananda-Centenary-College/Computer-Graphics-Algorithms/tree/main/Supravat-Das%5B729%5D)|
